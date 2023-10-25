@@ -1,0 +1,135 @@
+---
+
+export let title = "Travel Preferences Survey";
+export let description = "Please share your travel preferences with us.";
+
+---
+<section class="h-full flex items-center justify-center relative bg-cover bg-center py-12" style="background-image: url('/bg.jpg');">
+<form class="rounded-md z-50 bg-black/70 h-full w-fit mx-auto p-8  text-orange-400 shadow-2xl border-2 border-spacing-8 border-orange-500">
+  <h1 class="text-xl sm:text-4xl font-extrabold text-white mb-4">Travel Preferences Survey</h1>
+  <hr class="mb-8 w-[110.2%] relative -left-8" />
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2"  for="name" class="block w-full text-white">Name:</label>
+    <input class="transition ease duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" type="text" id="name" name="name" class="input-field" placeholder="Your Name" />
+  </div>
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" for="email" class="block text-white">Email:</label>
+    <input class="transition ease duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" type="email" id="email" name="email" class="input-field" placeholder="Your Email" />
+  </div>
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" for="destination" class="block text-white">Favorite Travel Destination:</label>
+    <input class="transition ease duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" type="text" id="destination" name="destination" class="input-field" placeholder="Your Favorite Destination" />
+  </div>
+
+  <div class="mb-8">
+    <p class="text-xl font-semibold tracking-wide text-white mb-2" class="text-white">Select Your Preferred Travel Type:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="solo" class="form-radio" />
+        <span>Solo Travel</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="family" class="form-radio" />
+        <span>Family Travel</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="adventure" class="form-radio" />
+        <span>Adventure Travel</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="luxury" class="form-radio" />
+        <span>Luxury Travel</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="business" class="form-radio" />
+        <span>Business Travel</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="travelType" value="cruise" class="form-radio" />
+        <span>Cruise Travel</span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="my-8">
+    <p class="text-xl font-semibold tracking-wide text-white mb-2" class="text-white">Do You Prefer Mountains or Beaches?</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="mountains" class="form-radio" />
+        <span>Mountains</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="beaches" class="form-radio" />
+        <span>Beaches</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="urban" class="form-radio" />
+        <span>Urban Exploration</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="rural" class="form-radio" />
+        <span>Rural Getaways</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="islands" class="form-radio" />
+        <span>Island Retreats</span>
+      </label>
+      <label class="flex items-center space-x-2 text-white">
+        <input type="radio" name="preference" value="desert" class="form-radio" />
+        <span>Desert Adventures</span>
+      </label>
+    </div>
+  </div>
+  
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" for="foodPreference" class="block text-white">Favorite Cuisine During Travel:</label>
+    <input class="transition ease duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" type="text" id="foodPreference" name="foodPreference" class="input-field" placeholder="Your Favorite Cuisine" />
+  </div>
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" class="block text-white">Select Your Accommodation Preference:</label>
+    <select name="accommodation" class="border-none outline-none transition ease duration-500 bg-transparent focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" class="input-field">
+      <option class="bg-black" value="hotel">--Select--</option>
+      <option class="bg-black" value="hotel">Hotel</option>
+      <option class="bg-black" value="airbnb">Airbnb</option>
+      <option class="bg-black" value="hostel">Hostel</option>
+      <option class="bg-black" value="camping">Camping</option>
+      <option class="bg-black" value="resort">Resort</option>
+      <option class="bg-black" value="cabin">Cabin</option>
+      <option class="bg-black" value="villas">Villas</option>
+      <option class="bg-black" value="bed-and-breakfast">Bed and Breakfast</option>
+      <option class="bg-black" value="treehouse">Treehouse</option>
+    </select>
+  </div>
+  
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" class="block text-white">What Is Your Ideal Trip Duration (in days):</label>
+    <input class="transition ease duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" type="number" name="tripDuration" class="input-field" placeholder="Number of Days" />
+  </div>
+
+  <div class="mb-4">
+    <label class="text-xl font-semibold tracking-wide text-white mb-2" class="block text-white">Additional Comments:</label>
+    <textarea class="transition ease bg-transparent duration-500 focus:ring-1 ring-orange-600 w-full p-1 rounded-md my-1" name="comments" class="input-field" placeholder="Any Additional Comments" rows="4"></textarea>
+  </div>
+
+  <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg w-full">
+    Submit
+  </button>
+
+  
+</form>
+</section>
+
+
+<style>
+  input{
+    background-color: transparent;
+    outline: none;
+  }
+
+
+</style>
